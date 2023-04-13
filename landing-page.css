@@ -1,0 +1,23 @@
+
+.buttonContainer {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin: auto;
+}
+
+
+.button{
+    width:85%;
+    height:85%;
+    left: 7.5%;
+    top: 7.5%;
+    position: absolute;
+}
+
+#button1 {
+    background-image: url("TrafficLightIcon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
