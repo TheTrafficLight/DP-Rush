@@ -19,7 +19,25 @@ body {
     left: -50%;
     z-index: -1;
     background-image: linear-gradient(to right, #ffffff, #b3cbe2, #47578a, #311b55, #250230);
+    animation-name: rotate;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+
+
+
+
 
 .navBar {
     height: 100px;
@@ -32,6 +50,7 @@ ul {
     overflow: hidden;
     background-color: rgb(40, 40, 43);
     height: 50%;
+    box-shadow: 2px 0px 4px 1px rgb(40, 40, 43);
 }
   
 li {
