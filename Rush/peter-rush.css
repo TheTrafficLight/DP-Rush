@@ -3,6 +3,23 @@ body {
     padding: 0;
     height: 100vh;
 }
+.backgroundContainer {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    overflow: hidden;
+}
+#background {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 300%;
+    top: -100%;
+    left: -50%;
+    z-index: -1;
+    background-image: linear-gradient(to right, #ffffff, #b3cbe2, #47578a, #311b55, #250230);
+}
 
 .navBar {
     height: 100px;
@@ -30,11 +47,13 @@ li a {
     text-decoration: none;
 }
 
-
-
-li:hover {
+li:hover:not(#active) {
     /* change this color */
     background-color: blue;
+}
+
+#active {
+    background-color: red;
 }
 
 a, a:visited {
@@ -55,4 +74,9 @@ a, a:visited {
 
 img {
     height: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: white;
 }
