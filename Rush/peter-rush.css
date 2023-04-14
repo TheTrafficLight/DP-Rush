@@ -1,29 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.navBar {
+    height: 100px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    height: 50px;
-    background-color: rgb(40,40,43);
-
+    overflow: hidden;
+    background-color: rgb(40, 40, 43);
+    height: 50%;
 }
-
+  
 li {
-    display: inline;
-    margin: auto;
-    
+    float: left;
+    height: 100%;
 }
-
-.listLink {
-    text-decoration: none;
+  
+li a {
+    display: block;
     color: white;
+    text-align: center;
+    height: 100%;
+    text-decoration: none;
 }
 
-a:visited {
+
+
+li:hover {
+    /* change this color */
+    background-color: blue;
+}
+
+a, a:visited {
     color: white;
     text-decoration: none;
 }
 
 #homeButton {
-    width: 50px;
-    background-color: rgb(40,40,43);
+    height: 100%;
+    filter: invert();
+    padding-left: 2px;
+    padding-right: 5px;
+}
+
+.textLink {
+    padding: 16px 16px;
+}
+
+img {
+    height: 100%;
 }
