@@ -1,0 +1,29 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    background-color: rgb(40,40,43);
+
+}
+
+li {
+    display: inline;
+    margin: auto;
+    
+}
+
+.listLink {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#homeButton {
+    width: 50px;
+    background-color: rgb(40,40,43);
+}
