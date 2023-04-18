@@ -1,0 +1,79 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+.background-Left {
+    background-image: url(Earth.-Org-the-growth-of-renewable-energy-what-does-the-future-hold-1200x800.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background-Right {
+    background-image: url(yannis-h-uaPaEM7MiQQ-unsplash-scaled.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.side {
+    height: 100vh;
+}
+
+.divider {
+    display: flex;
+    background: rgb(0, 0, 0);
+    /* I changed the height to be a percentage. This can be changed to your liking. set it to 100% if you want to go all the way down*/
+    height: 100%;
+    width: 2px;
+    /*transform: skew(-0.2turn, 0deg); not working :( */
+    box-shadow: 3px 0px 6px 7px rgb(0, 0, 0);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+}
+
+.column {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    float: left;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
+    width: 85%;
+    height: 85%;
+    left: 7.5%;
+    top: 7.5%;
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: rgb(255, 255, 255);
+}
+
+.card:hover {
+    filter: brightness(1.2)
+}
+
+/* to resize the cards change the width and height of this! */
+.cardContainer {
+    width: 400px;
+    height: 500px;
+    position: relative;
+    margin: auto;
+    top: 25%;
+}
+
+/* to remove the styles from the links */
+a, a:visited{
+    color: black;
+    text-decoration:none;
+}
