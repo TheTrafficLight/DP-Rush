@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.navBar {
+    height: 100px;
+    position: sticky; /*Allows the nav bar to remain at the top of the page whilst scrolling!*/
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(40, 40, 43);
+    height: 50%;
+    box-shadow: 2px 0px 4px 1px rgb(40, 40, 43);
+}
+  
+li {
+    float: left;
+    height: 100%;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    height: 100%;
+    text-decoration: none;
+}
+
+li:hover:not(#active) {
+    /* change this color */
+    background-color: blue;
+}
+
+#active {
+    background-color: red;
+}
+
+a, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#homeButton {
+    height: 100%;
+    filter: invert();
+    padding-left: 2px;
+    padding-right: 5px;
+}
+
+.textLink {
+    padding: 16px 16px;
+}
+
+#homeImg {
+    height: 100%;
+}
