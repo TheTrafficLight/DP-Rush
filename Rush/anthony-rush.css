@@ -6,6 +6,7 @@ body {
 
 .navBar {
     height: 100px;
+    position: sticky; /*Allows the nav bar to remain at the top of the page whilst scrolling!*/
 }
 
 ul {
