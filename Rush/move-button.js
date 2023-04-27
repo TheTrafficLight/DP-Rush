@@ -4,17 +4,13 @@ function trackMouse(el, isInside) {
     var child = el.childNodes[1];
     var childWidth = child.offsetWidth;
     var childHeight = child.offsetHeight;
-
-    var posX = event.clientX - rect.left;
-    var posY = event.clientY - rect.top;
+    var posX = window.event.clientX - rect.left;
+    var posY = window.event.clientY - rect.top;
     var maxPosX = rect.width - childWidth / 2;
     var maxPosY = rect.height - childHeight / 2;
     var minPosX = childWidth / 2;
     var minPosY = childHeight / 2;
-
     var speed
-
-    
 
     // limit posX and posY to stay within the bounds of the box
     posX = Math.min(Math.max(posX, minPosX), maxPosX);
@@ -31,15 +27,14 @@ function trackMouse(el, isInside) {
         speed = 20000
     }
 
-    //move the box
-    child.animate({
-        left: (posX - childWidth / 2) + "px",
-        top: (posY - childHeight / 2) + "px"
-    }, {
-        duration: speed,
-        fill: "forwards"
-    });
+    console.log(childHeight);
 
-
+        child.animate({
+            top: (posY - childHeight / 2) + "px",
+            left: (posX - childWidth / 2) + "px"
+        }, {
+            duration: speed,
+            fill: "forwards"
+        });
 }
 
