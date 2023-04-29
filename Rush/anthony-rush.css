@@ -5,8 +5,10 @@ body {
 }
 
 .navBar {
-    height: 100px;
-    position: sticky; /*Allows the nav bar to remain at the top of the page whilst scrolling!*/
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 ul {
@@ -15,13 +17,14 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: rgb(40, 40, 43);
-    height: 50%;
+    height: 100%;
     box-shadow: 2px 0px 4px 1px rgb(40, 40, 43);
 }
   
 li {
     float: left;
     height: 100%;
+    transition: 0.3s;
 }
   
 li a {
@@ -30,20 +33,32 @@ li a {
     text-align: center;
     height: 100%;
     text-decoration: none;
-}
-
-li:hover:not(#active) {
-    /* change this color */
-    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 #active {
-    background-color: red;
+    background-color: rgb(113, 113, 235);
+    color: black;
+    transition: 0.3s;
 }
 
-a, a:visited {
-    color: white;
-    text-decoration: none;
+#active:hover {
+    background-color: rgb(104, 198, 186);
+    color: black;
+}
+
+li:hover a:not(#homeButton){
+    color: black;
+}
+
+li:hover {
+    background-color: rgb(104, 198, 186);
+}
+
+#active {
+    background-color: rgb(113, 113, 235);
+    color: black;
 }
 
 #homeButton {

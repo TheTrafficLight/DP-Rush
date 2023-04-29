@@ -3,6 +3,8 @@ body {
     padding: 0;
     height: 100vh;
 }
+
+
 .backgroundContainer {
     height: 100%;
     width: 100%;
@@ -19,9 +21,9 @@ body {
     top: -100%;
     left: -50%;
     z-index: -1;
-    background-image: linear-gradient(to right, #ffffff, #b3cbe2, #47578a, #311b55, #250230);
+    background-image: linear-gradient(to right, #c4cbf9, #8aa7c2, #47578a, #311b55, #250230);
     animation-name: rotate;
-    animation-duration: 30s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -35,8 +37,14 @@ body {
     }
 }
 
+
+
+
 .navBar {
-    height: 100px;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 ul {
@@ -45,13 +53,14 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: rgb(40, 40, 43);
-    height: 50%;
+    height: 100%;
     box-shadow: 2px 0px 4px 1px rgb(40, 40, 43);
 }
   
 li {
     float: left;
     height: 100%;
+    transition: 0.3s;
 }
   
 li a {
@@ -60,20 +69,32 @@ li a {
     text-align: center;
     height: 100%;
     text-decoration: none;
-}
-
-li:hover:not(#active) {
-    /* change this color */
-    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 #active {
-    background-color: red;
+    background-color: rgb(113, 113, 235);
+    color: black;
+    transition: 0.3s;
 }
 
-a, a:visited {
-    color: white;
-    text-decoration: none;
+#active:hover {
+    background-color: rgb(104, 198, 186);
+    color: black;
+}
+
+li:hover a:not(#homeButton){
+    color: black;
+}
+
+li:hover {
+    background-color: rgb(104, 198, 186);
+}
+
+#active {
+    background-color: rgb(113, 113, 235);
+    color: black;
 }
 
 #homeButton {
@@ -91,18 +112,50 @@ a, a:visited {
     height: 100%;
 }
 
+
+
+
+.middleColumn {
+    margin: auto;
+    width: 45%;
+    background-color: white;
+    border-radius: 5px;
+}
+
 h1 {
     text-align: center;
     color: white;
-    font-size: 500%;
+    font-size: 400%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 50px;
 }
 
 p {
     text-align: center;
-    color: white;
+    color: rgb(40, 40, 43);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 115%
 }
 
-.middleColumn {
+.quote {
+    color: rgb(104, 198, 186);
+    font-size: 160%;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    font-weight: bold;
     margin: auto;
-    width: 30%
+    padding: 20px;
+    background-color: rgb(40, 40, 43);
+    border-radius: 5px;
+}
+
+.copyright {
+    text-align: right;
+    font-size: 80%;
+    font-family: sans-serif;
+    color: white;
+    padding-bottom: 20px;
 }
