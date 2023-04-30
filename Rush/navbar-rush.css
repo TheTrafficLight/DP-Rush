@@ -1,0 +1,45 @@
+
+#navbar {
+    height: 50px;
+    background-color: rgb(40, 43, 44); /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  }
+  
+  /* Style the navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+
+#active {
+    background-color: rgb(184, 90, 14);
+}
+
+#navbar a:hover {
+    /*box-shadow: 0 0 9px 3px rgba(0.2, 0.2, 0.2, 1);*/
+    filter: brightness(1.4);
+
+}
+
+#homeImg {
+    height: 45px;
+    filter: invert();
+    padding-left: 5px;
+    padding-top: 1.2px;
+    padding-right: 5px;
+}
+
+.textLink {
+    padding: 15.59px;
+    font-family: "Monaco", monospace;
+}
+
+a {
+    background-color: rgb(40, 43, 44);
+}
