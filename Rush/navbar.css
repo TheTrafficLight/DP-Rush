@@ -33,22 +33,20 @@ li a {
 }
 
 #active {
-    background-color: rgb(113, 113, 235);
     color: black;
     transition: 0.3s;
 }
 
-#active:hover {
+li:nth-child(3) > #active {
     background-color: rgb(104, 198, 186);
-    color: black;
 }
 
-li:hover a:not(#homeButton){
-    color: black;
+li:nth-child(2) > #active {
+    background-color: rgb(230,102,37);
 }
 
 li:hover {
-    background-color: rgb(104, 198, 186);
+    background-color: rgb(97, 97, 97);
 }
 
 #homeButton {
