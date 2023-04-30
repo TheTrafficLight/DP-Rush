@@ -51,11 +51,6 @@ li:hover {
     background-color: rgb(104, 198, 186);
 }
 
-#active {
-    background-color: rgb(113, 113, 235);
-    color: black;
-}
-
 #homeButton {
     height: 100%;
     filter: invert();
